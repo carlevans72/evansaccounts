@@ -67,6 +67,65 @@
     if (window.innerWidth > 900) closeMenu();
   });
 
+  /* ── Contact form — Web3Forms ── */
+  const contactForm = document.querySelector('.contact-form');
+
+  if (contactForm) {
+    const submitBtn    = contactForm.querySelector('.form-submit');
+    const labelEl      = contactForm.querySelector('.form-submit-label');
+    const sendingEl    = contactForm.querySelector('.form-submit-sending');
+    const feedbackEl   = contactForm.querySelector('.form-success');
+
+    function setSubmitting(on) {
+      submitBtn.disabled = on;
+      labelEl.style.display   = on ? 'none' : '';
+      sendingEl.style.display  = on ? 'inline' : 'none';
+    }
+
+    function showFeedback(msg, isError) {
+      feedbackEl.textContent = msg;
+      feedbackEl.className   = 'form-success ' + (isError ? 'is-error' : 'is-success');
+    }
+
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      /* Basic client-side validation */
+      const name    = contactForm.name.value.trim();
+      const email   = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+
+      if (!name || !email || !message) {
+        showFeedback('Please fill in all fields before sending.', true);
+        return;
+      }
+
+      setSubmitting(true);
+      feedbackEl.className = 'form-success';
+      feedbackEl.textContent = '';
+
+      try {
+        const res  = await fetch('https://api.web3forms.com/submit', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body:    JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          showFeedback('Thank you — your message has been sent. We\'ll be in touch shortly.', false);
+          contactForm.reset();
+        } else {
+          showFeedback('Something went wrong. Please try emailing us directly at info@evansaccounts.co.uk.', true);
+        }
+      } catch (_err) {
+        showFeedback('Could not send your message. Please check your connection or email us directly at info@evansaccounts.co.uk.', true);
+      } finally {
+        setSubmitting(false);
+      }
+    });
+  }
+
   /* ── Scroll-triggered animations ── */
   const observerOptions = {
     threshold: 0.1,
