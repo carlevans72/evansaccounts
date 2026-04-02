@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "Static Site",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8080", "--directory", "/Users/carlevans/Code/evansaccounts"],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
       "port": 8080
     }
   ]

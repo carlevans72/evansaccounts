@@ -1,0 +1,11 @@
+{
+  "name": "evansaccounts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve . --listen 8080 --no-clipboard"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

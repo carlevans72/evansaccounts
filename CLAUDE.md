@@ -4,15 +4,15 @@
 
 Static marketing website for Evans Tax and Accounts Limited, a Scottish chartered accounting and tax advisory firm. Single-page site with contact form.
 
-**Stack:** HTML5, CSS3, vanilla JavaScript (ES6). No build tool, no framework, no package manager.
+**Stack:** HTML5, CSS3, vanilla JavaScript (ES6). No build tool, no framework. `package.json` exists solely for the local dev server (`serve`) — the site itself has no dependencies.
 
 ## Running locally
 
 ```bash
-python3 -m http.server 8080
+npm run dev
 ```
 
-Dev server config is in `.claude/launch.json`. The site is fully static — no build step.
+Dev server config is in `.claude/launch.json`. Uses `serve` (Node) on port 8080. The site itself is fully static — no build step.
 
 ## File structure
 
