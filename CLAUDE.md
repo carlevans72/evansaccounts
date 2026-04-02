@@ -44,6 +44,10 @@ assets/
 
 Uses [Web3Forms](https://web3forms.com). The `access_key` is set in `index.html` around line 313. Do not hardcode or commit a real key — confirm with the user before changing it.
 
+## Git workflow
+
+Do not commit or push unless explicitly asked. Make code changes freely, but wait for instruction before running any `git commit` or `git push` commands.
+
 ## Deployment
 
 No build step — deploy by uploading files directly. Compatible with GitHub Pages, Netlify, Vercel, or any static host.

@@ -3,7 +3,7 @@
    ────────────────────────────────────────────────────────────── */
 
 .section-label {
-  font-size: 0.68rem;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
 
 .section-heading {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: clamp(32px, 3.5vw, 44px);
   font-weight: 600;
   line-height: 1.15;
   color: var(--navy);
@@ -129,7 +129,7 @@
 
 .service-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 600;
   color: var(--navy);
   margin-bottom: 0.75rem;
@@ -137,7 +137,7 @@
 }
 
 .service-body {
-  font-size: 0.95rem;
+  font-size: 15px;
   color: var(--text-body);
   line-height: 1.75;
 }
@@ -184,14 +184,14 @@
 
 .about-stat-number {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   color: var(--navy);
   line-height: 1;
 }
 
 .about-stat-label {
-  font-size: 0.78rem;
+  font-size: 12px;
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
@@ -207,7 +207,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.78rem;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--navy);
@@ -272,7 +272,7 @@
 }
 
 .contact-detail-text {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-muted);
 }
 
