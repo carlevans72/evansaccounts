@@ -30,4 +30,9 @@
   --section-gap: 3.5rem;
   --inner-gap: 1.5rem;
   --max-width: 1100px;
+
+  /* SHADOWS & DEPTH */
+  --shadow-sm: 0 2px 8px rgba(15, 31, 56, 0.08);
+  --shadow-md: 0 8px 24px rgba(15, 31, 56, 0.12);
+  --shadow-lg: 0 16px 48px rgba(15, 31, 56, 0.15);
 }

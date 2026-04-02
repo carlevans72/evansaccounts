@@ -66,4 +66,25 @@
   window.addEventListener('resize', function () {
     if (window.innerWidth > 900) closeMenu();
   });
+
+  /* ── Scroll-triggered animations ── */
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  /* Observe section headings and cards */
+  document.querySelectorAll('.section-heading, .service-card, .qual-badge').forEach(function (el) {
+    el.classList.add('animate-on-scroll');
+    observer.observe(el);
+  });
 })();

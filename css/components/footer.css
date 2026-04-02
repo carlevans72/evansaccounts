@@ -3,15 +3,26 @@
    ────────────────────────────────────────────────────────────── */
 
 footer {
-  background: var(--off-white);
-  padding: 2.5rem 4vw;
+  background: linear-gradient(135deg, var(--off-white) 0%, rgba(201, 168, 76, 0.03) 100%);
+  padding: 3rem 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  border-top: 1px solid var(--border);
+  gap: 2rem;
+  border-top: 2px solid var(--gold);
   max-width: 100%;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
 .footer-logo {
@@ -34,4 +45,29 @@ footer {
   color: var(--text-muted);
   text-align: right;
   line-height: 1.8;
+}
+
+.footer-meta a {
+  position: relative;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.footer-meta a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.footer-meta a:hover {
+  color: var(--navy);
+}
+
+.footer-meta a:hover::after {
+  width: 100%;
 }

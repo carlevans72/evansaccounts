@@ -8,6 +8,7 @@
 @import 'variables.css';
 @import 'reset.css';
 @import 'typography.css';
+@import 'design-system.css';
 @import 'components/nav.css';
 @import 'components/hero.css';
 @import 'components/sections.css';
