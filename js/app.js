@@ -64,7 +64,7 @@
 
   /* Close if viewport grows past breakpoint */
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 900) closeMenu();
+    if (window.innerWidth > 1100) closeMenu();
   });
 
   /* ── Contact form — Web3Forms ── */
@@ -97,6 +97,11 @@
 
       if (!name || !email || !message) {
         showFeedback('Please fill in all fields before sending.', true);
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showFeedback('Please enter a valid email address.', true);
         return;
       }
 

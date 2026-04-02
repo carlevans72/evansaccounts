@@ -37,7 +37,7 @@ assets/
 
 - **CSS:** All design tokens live in `variables.css`. Colour palette is navy/gold extracted from the logo. Shadow depth system: `sm/md/lg`.
 - **JavaScript:** IIFE pattern with `'use strict'`. Uses Intersection Observer for scroll animations and the Fetch API for form submission (Web3Forms).
-- **Responsive:** Main breakpoint at 600px. Service cards go 4→2→1 columns (not CSS auto-fit). Mobile nav closes at 900px viewport width.
+- **Responsive:** Main breakpoint at 600px. Service cards go 4→2→1 columns (not CSS auto-fit). Mobile nav closes at 1100px viewport width.
 - **Accessibility:** ARIA attributes throughout (`aria-expanded`, `aria-hidden`, `aria-live`), semantic HTML.
 
 ## Contact form
