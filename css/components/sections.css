@@ -158,7 +158,7 @@
   align-items: start;
 }
 
-.about-body p {
+.about-body p:not(.section-label) {
   font-size: 1rem;
   color: var(--text-body);
   line-height: 1.85;
@@ -249,7 +249,7 @@
   color: var(--steel-blue-light);
 }
 
-.contact-intro p {
+.contact-intro p:not(.section-label) {
   font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.8;
