@@ -36,6 +36,10 @@
     grid-template-columns: 1fr;
   }
 
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .nav-links,
   .nav-cta {
     display: none;
