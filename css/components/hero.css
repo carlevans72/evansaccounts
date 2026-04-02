@@ -215,7 +215,6 @@
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  color: var(--gold);
 }
 
 .credential-label {

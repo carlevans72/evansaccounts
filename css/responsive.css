@@ -60,10 +60,6 @@
 }
 
 @media (max-width: 600px) {
-  #hero::after {
-    display: none;
-  }
-
   .hero-credentials {
     grid-template-columns: 1fr;
   }
