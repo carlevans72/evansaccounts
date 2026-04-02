@@ -1,0 +1,17 @@
+/* ──────────────────────────────────────────────────────────────
+   TYPOGRAPHY
+   ────────────────────────────────────────────────────────────── */
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.85;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s;
+}

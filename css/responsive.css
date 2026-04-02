@@ -1,0 +1,69 @@
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVE DESIGN
+   ────────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-credentials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .ethos-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .ethos-sticky {
+    position: static;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero::after {
+    display: none;
+  }
+
+  .hero-credentials {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

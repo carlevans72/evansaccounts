@@ -1,0 +1,193 @@
+/* ──────────────────────────────────────────────────────────────
+   HERO SECTION
+   ────────────────────────────────────────────────────────────── */
+
+#hero {
+  min-height: 100vh;
+  background: var(--navy);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(
+      circle at 70% 40%,
+      rgba(74, 104, 153, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(30, 58, 106, 0.5) 0%,
+      transparent 40%
+    );
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--gold) 30%,
+    var(--gold) 70%,
+    transparent
+  );
+  opacity: 0.15;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8rem 4vw 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-eyebrow::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--warm-white);
+  margin-bottom: 1.5rem;
+}
+
+.hero-heading em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 44ch;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--gold);
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--off-white);
+  border: 1px solid rgba(247, 249, 252, 0.25);
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hero-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.credential-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(74, 104, 153, 0.25);
+  border-radius: 4px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.credential-card:hover {
+  background: rgba(74, 104, 153, 0.08);
+  border-color: rgba(74, 104, 153, 0.4);
+}
+
+.credential-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+.credential-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--steel-blue-light);
+  margin-bottom: 0.3rem;
+}
+
+.credential-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--warm-white);
+  line-height: 1.3;
+}
+
+.credential-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,37 @@
+/* ──────────────────────────────────────────────────────────────
+   FOOTER
+   ────────────────────────────────────────────────────────────── */
+
+footer {
+  background: var(--off-white);
+  padding: 2.5rem 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  max-width: 100%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.footer-logo-img {
+  height: 36px;
+  width: auto;
+}
+
+.footer-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: right;
+  line-height: 1.8;
+}

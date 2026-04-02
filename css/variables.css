@@ -1,0 +1,33 @@
+/* ──────────────────────────────────────────────────────────────
+   CSS VARIABLES
+   ────────────────────────────────────────────────────────────── */
+
+:root {
+  /* PALETTE — drawn from the logo */
+  --navy: #0f1f38;
+  --navy-mid: #162d52;
+  --navy-light: #1e3a6a;
+  --steel-blue: #4a6899;
+  --steel-blue-light: #6b8fc4;
+  --gold: #c9a84c;
+  --gold-light: #e2c278;
+
+  /* BACKGROUNDS */
+  --off-white: #f7f9fc;
+  --light-bg: #edf2f8;
+  --warm-white: #ffffff;
+
+  /* TEXT */
+  --text-body: #2d3f5c;
+  --text-muted: #7a90b0;
+
+  /* BORDERS */
+  --border: rgba(74, 104, 153, 0.15);
+  --border-gold: rgba(201, 168, 76, 0.25);
+
+  /* SPACING */
+  --section-padding: 6rem 4vw;
+  --section-gap: 3.5rem;
+  --inner-gap: 1.5rem;
+  --max-width: 1100px;
+}

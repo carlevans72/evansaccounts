@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Evans Accounts | Chartered Accountants & Tax Advisors – Scotland
-    </title>
+    <title>Evans Tax and Accounts Limited | Chartered Accountants & Tax Advisors – Scotland</title>
     <meta
       name="description"
-      content="Evans Accounts provides professional, reliable and affordable tax and accounting services to owner-managed businesses across Scotland. Chartered Accountant and Chartered Tax Advisor with over 35 years' experience."
+      content="Evans Tax and Accounts Limited provides professional, reliable and affordable tax and accounting services to owner-managed businesses across Scotland. Chartered Accountant and Chartered Tax Advisor with over 35 years' experience."
     />
     <meta
       name="keywords"
@@ -17,14 +15,8 @@
     <link rel="canonical" href="https://evansaccounts.co.uk/" />
 
     <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Evans Accounts | Chartered Accountants & Tax Advisors"
-    />
-    <meta
-      property="og:description"
-      content="Professional, reliable and affordable accounting and tax services for owner-managed businesses across Scotland."
-    />
+    <meta property="og:title" content="Evans Tax and Accounts Limited | Chartered Accountants & Tax Advisors" />
+    <meta property="og:description" content="Professional, reliable and affordable accounting and tax services for owner-managed businesses across Scotland." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://evansaccounts.co.uk/" />
 
@@ -33,7 +25,7 @@
       {
         "@context": "https://schema.org",
         "@type": "AccountingService",
-        "name": "Evans Accounts",
+        "name": "Evans Tax and Accounts Limited",
         "description": "Professional tax and accounting services for owner-managed businesses across Scotland.",
         "url": "https://evansaccounts.co.uk",
         "email": "info@evansaccounts.co.uk",
@@ -46,776 +38,20 @@
       }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      :root {
-        --navy: #0f1f38;
-        --navy-mid: #162d52;
-        --navy-light: #1e3a6a;
-        --gold: #c9a84c;
-        --gold-light: #e2c278;
-        --cream: #f5f0e8;
-        --warm-white: #faf8f4;
-        --text-muted: #8a9ab5;
-        --border: rgba(201, 168, 76, 0.2);
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "DM Sans", sans-serif;
-        background: var(--warm-white);
-        color: var(--navy);
-        font-weight: 300;
-        line-height: 1.7;
-        overflow-x: hidden;
-      }
-
-      /* ── NAV ── */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.25rem 4vw;
-        background: rgba(15, 31, 56, 0.97);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .nav-logo {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: var(--warm-white);
-        letter-spacing: 0.02em;
-        text-decoration: none;
-      }
-      .nav-logo span {
-        color: var(--gold);
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-      }
-      .nav-links a {
-        font-size: 0.8rem;
-        font-weight: 400;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .nav-links a:hover {
-        color: var(--gold);
-      }
-
-      .nav-cta {
-        font-size: 0.75rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--navy);
-        background: var(--gold);
-        padding: 0.55rem 1.4rem;
-        text-decoration: none;
-        border-radius: 2px;
-        transition: background 0.2s;
-      }
-      .nav-cta:hover {
-        background: var(--gold-light);
-      }
-
-      /* hamburger */
-      .hamburger {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        background: none;
-        border: none;
-        padding: 4px;
-      }
-      .hamburger span {
-        display: block;
-        width: 24px;
-        height: 2px;
-        background: var(--cream);
-        transition: all 0.3s;
-      }
-
-      /* ── HERO ── */
-      #hero {
-        min-height: 100vh;
-        background: var(--navy);
-        position: relative;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-      }
-
-      /* subtle geometric background */
-      #hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image:
-          radial-gradient(
-            circle at 70% 40%,
-            rgba(201, 168, 76, 0.07) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 20% 80%,
-            rgba(30, 58, 106, 0.6) 0%,
-            transparent 40%
-          );
-      }
-
-      /* diagonal accent line */
-      #hero::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 10%;
-        width: 1px;
-        height: 100%;
-        background: linear-gradient(
-          to bottom,
-          transparent,
-          var(--gold) 30%,
-          var(--gold) 70%,
-          transparent
-        );
-        opacity: 0.15;
-      }
-
-      .hero-inner {
-        position: relative;
-        z-index: 1;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 8rem 4vw 5rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-      }
-
-      .hero-eyebrow {
-        font-size: 0.72rem;
-        font-weight: 500;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 1.25rem;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-      .hero-eyebrow::before {
-        content: "";
-        display: block;
-        width: 2rem;
-        height: 1px;
-        background: var(--gold);
-      }
-
-      .hero-heading {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(2.8rem, 5vw, 4.2rem);
-        font-weight: 600;
-        line-height: 1.1;
-        color: var(--warm-white);
-        margin-bottom: 1.5rem;
-      }
-      .hero-heading em {
-        font-style: italic;
-        color: var(--gold);
-      }
-
-      .hero-body {
-        font-size: 1rem;
-        color: var(--text-muted);
-        max-width: 44ch;
-        margin-bottom: 2.5rem;
-        line-height: 1.8;
-      }
-
-      .hero-actions {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .btn-primary {
-        font-size: 0.78rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--navy);
-        background: var(--gold);
-        padding: 0.85rem 2rem;
-        text-decoration: none;
-        border-radius: 2px;
-        transition:
-          background 0.2s,
-          transform 0.2s;
-      }
-      .btn-primary:hover {
-        background: var(--gold-light);
-        transform: translateY(-1px);
-      }
-
-      .btn-ghost {
-        font-size: 0.78rem;
-        font-weight: 400;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--cream);
-        border: 1px solid rgba(245, 240, 232, 0.25);
-        padding: 0.85rem 2rem;
-        text-decoration: none;
-        border-radius: 2px;
-        transition:
-          border-color 0.2s,
-          color 0.2s;
-      }
-      .btn-ghost:hover {
-        border-color: var(--gold);
-        color: var(--gold);
-      }
-
-      /* hero right: credential badges */
-      .hero-credentials {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-      }
-
-      .credential-card {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid var(--border);
-        border-radius: 4px;
-        padding: 1.5rem 1.75rem;
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-        transition:
-          background 0.25s,
-          border-color 0.25s;
-      }
-      .credential-card:hover {
-        background: rgba(201, 168, 76, 0.06);
-        border-color: rgba(201, 168, 76, 0.4);
-      }
-
-      .credential-icon {
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-        color: var(--gold);
-      }
-
-      .credential-label {
-        font-size: 0.68rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 0.3rem;
-      }
-
-      .credential-title {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.15rem;
-        font-weight: 600;
-        color: var(--warm-white);
-        line-height: 1.3;
-      }
-
-      .credential-sub {
-        font-size: 0.8rem;
-        color: var(--text-muted);
-        margin-top: 0.25rem;
-      }
-
-      /* ── ETHOS ── */
-      #ethos {
-        background: var(--cream);
-        padding: 6rem 4vw;
-      }
-
-      .ethos-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      .section-label {
-        font-size: 0.68rem;
-        font-weight: 500;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 0.75rem;
-      }
-
-      .section-heading {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(2rem, 3.5vw, 2.8rem);
-        font-weight: 600;
-        line-height: 1.15;
-        color: var(--navy);
-      }
-
-      .ethos-sticky {
-        position: sticky;
-        top: 7rem;
-      }
-
-      .ethos-body p {
-        font-size: 1rem;
-        color: #3d4f6e;
-        line-height: 1.85;
-        margin-bottom: 1.5rem;
-      }
-
-      .ethos-rule {
-        width: 3rem;
-        height: 2px;
-        background: var(--gold);
-        margin-bottom: 2rem;
-      }
-
-      /* ── SERVICES ── */
-      #services {
-        background: var(--navy);
-        padding: 6rem 4vw;
-      }
-
-      .services-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-      }
-
-      .services-header {
-        margin-bottom: 3.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      .services-header .section-heading {
-        color: var(--warm-white);
-      }
-
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.5px;
-        background: var(--border);
-        border: 1px solid var(--border);
-        border-radius: 4px;
-        overflow: hidden;
-      }
-
-      .service-card {
-        background: var(--navy-mid);
-        padding: 2.25rem 2rem;
-        transition: background 0.25s;
-        position: relative;
-      }
-      .service-card::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 2rem;
-        right: 2rem;
-        height: 1px;
-        background: var(--border);
-      }
-      .service-card:hover {
-        background: var(--navy-light);
-      }
-
-      .service-icon {
-        width: 36px;
-        height: 36px;
-        color: var(--gold);
-        margin-bottom: 1.25rem;
-      }
-
-      .service-title {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: var(--warm-white);
-        margin-bottom: 0.75rem;
-        line-height: 1.3;
-      }
-
-      .service-body {
-        font-size: 0.875rem;
-        color: var(--text-muted);
-        line-height: 1.75;
-      }
-
-      /* ── ABOUT ── */
-      #about {
-        background: var(--warm-white);
-        padding: 6rem 4vw;
-      }
-
-      .about-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      .about-body p {
-        font-size: 1rem;
-        color: #3d4f6e;
-        line-height: 1.85;
-        margin-bottom: 1.5rem;
-      }
-
-      .about-body .section-heading {
-        color: var(--navy);
-        margin-bottom: 1rem;
-      }
-
-      .about-aside {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-        padding-top: 3.5rem;
-      }
-
-      .about-stat {
-        border-left: 2px solid var(--gold);
-        padding-left: 1.25rem;
-      }
-
-      .about-stat-number {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--navy);
-        line-height: 1;
-      }
-
-      .about-stat-label {
-        font-size: 0.78rem;
-        color: var(--text-muted);
-        margin-top: 0.25rem;
-      }
-
-      .qualifications {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-
-      .qual-badge {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        font-size: 0.78rem;
-        font-weight: 500;
-        letter-spacing: 0.06em;
-        color: var(--navy);
-        background: var(--cream);
-        border: 1px solid rgba(15, 31, 56, 0.12);
-        padding: 0.6rem 1rem;
-        border-radius: 2px;
-      }
-
-      .qual-badge svg {
-        width: 16px;
-        height: 16px;
-        color: var(--gold);
-        flex-shrink: 0;
-      }
-
-      /* ── CONTACT ── */
-      #contact {
-        background: var(--navy);
-        padding: 6rem 4vw;
-      }
-
-      .contact-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      .contact-intro .section-heading {
-        color: var(--warm-white);
-        margin-bottom: 1rem;
-      }
-      .contact-intro p {
-        font-size: 1rem;
-        color: var(--text-muted);
-        line-height: 1.8;
-        margin-bottom: 2rem;
-      }
-
-      .contact-detail {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-bottom: 1.25rem;
-      }
-
-      .contact-detail-icon {
-        width: 18px;
-        height: 18px;
-        color: var(--gold);
-        margin-top: 2px;
-        flex-shrink: 0;
-      }
-
-      .contact-detail-text {
-        font-size: 0.9rem;
-        color: var(--text-muted);
-      }
-      .contact-detail-text a {
-        color: var(--cream);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .contact-detail-text a:hover {
-        color: var(--gold);
-      }
-
-      /* form */
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.4rem;
-      }
-
-      .form-group label {
-        font-size: 0.7rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-      }
-
-      .form-group input,
-      .form-group textarea,
-      .form-group select {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 2px;
-        color: var(--warm-white);
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.9rem;
-        padding: 0.75rem 1rem;
-        outline: none;
-        transition: border-color 0.2s;
-        width: 100%;
-      }
-      .form-group input::placeholder,
-      .form-group textarea::placeholder {
-        color: rgba(138, 154, 181, 0.5);
-      }
-      .form-group input:focus,
-      .form-group textarea:focus,
-      .form-group select:focus {
-        border-color: var(--gold);
-      }
-      .form-group select option {
-        background: var(--navy);
-      }
-      .form-group textarea {
-        resize: vertical;
-        min-height: 120px;
-      }
-
-      .form-submit {
-        margin-top: 0.5rem;
-        font-size: 0.78rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--navy);
-        background: var(--gold);
-        border: none;
-        padding: 0.9rem 2rem;
-        cursor: pointer;
-        border-radius: 2px;
-        align-self: flex-start;
-        transition: background 0.2s;
-      }
-      .form-submit:hover {
-        background: var(--gold-light);
-      }
-
-      .form-note {
-        font-size: 0.75rem;
-        color: var(--text-muted);
-        margin-top: 0.25rem;
-      }
-
-      /* ── FOOTER ── */
-      footer {
-        background: #08152a;
-        padding: 2.5rem 4vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1rem;
-        border-top: 1px solid var(--border);
-      }
-
-      .footer-logo {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--warm-white);
-      }
-      .footer-logo span {
-        color: var(--gold);
-      }
-
-      .footer-meta {
-        font-size: 0.75rem;
-        color: var(--text-muted);
-        text-align: right;
-        line-height: 1.8;
-      }
-
-      /* ── ANIMATIONS ── */
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(24px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .hero-eyebrow {
-        animation: fadeUp 0.6s ease both;
-      }
-      .hero-heading {
-        animation: fadeUp 0.6s 0.1s ease both;
-      }
-      .hero-body {
-        animation: fadeUp 0.6s 0.2s ease both;
-      }
-      .hero-actions {
-        animation: fadeUp 0.6s 0.3s ease both;
-      }
-      .hero-credentials {
-        animation: fadeUp 0.6s 0.35s ease both;
-      }
-
-      /* ── RESPONSIVE ── */
-      @media (max-width: 900px) {
-        .hero-inner {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-        .hero-credentials {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-        }
-        .ethos-inner {
-          grid-template-columns: 1fr;
-        }
-        .ethos-sticky {
-          position: static;
-        }
-        .about-inner {
-          grid-template-columns: 1fr;
-        }
-        .about-aside {
-          flex-direction: row;
-          flex-wrap: wrap;
-          padding-top: 0;
-        }
-        .contact-inner {
-          grid-template-columns: 1fr;
-        }
-        .nav-links,
-        .nav-cta {
-          display: none;
-        }
-        .hamburger {
-          display: flex;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .hero-credentials {
-          grid-template-columns: 1fr;
-        }
-        .form-row {
-          grid-template-columns: 1fr;
-        }
-        .services-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <!-- NAV -->
     <nav>
-      <a class="nav-logo" href="#hero">Evans<span>.</span>Accounts</a>
+      <a class="nav-logo" href="#hero">
+        <img
+          class="nav-logo-img"
+          src="assets/branding-logo.png"
+          alt="Evans Tax and Accounts Limited logo"
+        />
+        <span class="co-name">Evans Tax and Accounts Limited</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#ethos">Our Ethos</a></li>
         <li><a href="#services">Services</a></li>
@@ -823,14 +59,20 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a class="nav-cta" href="#contact">Get in Touch</a>
-      <button
-        class="hamburger"
-        aria-label="Menu"
-        onclick="this.classList.toggle('open')"
-      >
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
     </nav>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="#ethos">Our Ethos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="mobile-nav-cta" href="#contact">Get in Touch</a>
+    </div>
 
     <!-- HERO -->
     <section id="hero">
@@ -933,9 +175,7 @@
             <div>
               <p class="credential-label">Regulated</p>
               <p class="credential-title">Fully Compliant</p>
-              <p class="credential-sub">
-                Bound by strict professional standards
-              </p>
+              <p class="credential-sub">Bound by strict professional standards</p>
             </div>
           </div>
         </div>
@@ -946,34 +186,26 @@
     <section id="ethos">
       <div class="ethos-inner">
         <div class="ethos-sticky">
-          <p class="section-label">Our Philosophy</p>
-          <h2 class="section-heading">Why we do<br />what we do.</h2>
+          <p class="section-label">Our Ethos</p>
+          <h2 class="section-heading">A simple goal,<br />done well.</h2>
         </div>
         <div class="ethos-body">
           <div class="ethos-rule"></div>
           <p>
-            We set up Evans Accounts with a simple goal: to provide
-            professional, reliable and affordable tax and accounting services to
-            owner-managed businesses.
+            We set up our company with a simple goal: to provide professional,
+            reliable and affordable tax and accounting services to owner-managed
+            businesses.
           </p>
           <p>
             We understand that running a business today means dealing with
             increasing regulations and administrative tasks. These
-            responsibilities can take up valuable time and energy that is better
-            spent running your business.
+            responsibilities can take up valuable time and energy.
           </p>
           <p>
             That's where we come in. We work closely with you to offer tailored
-            support and trusted advice — helping to reduce the burden of
-            compliance so you can focus on what matters most: growing and
+            support and trusted advice, helping to reduce the burden of
+            compliance so you can focus on what matters most — growing and
             running your business.
-          </p>
-          <p>
-            As a qualified professional, Sharon is bound by strict regulatory
-            standards. This includes maintaining complete client confidentiality
-            and staying fully up to date with the latest legislation and best
-            practices — so you can feel confident you're receiving expert,
-            compliant advice.
           </p>
         </div>
       </div>
@@ -1001,20 +233,16 @@
               stroke-linejoin="round"
               aria-hidden="true"
             >
-              <path
-                d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"
-              />
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
               <rect x="9" y="3" width="6" height="4" rx="1" />
               <path d="M9 12h6M9 16h4" />
             </svg>
-            <h3 class="service-title">
-              Bookkeeping, VAT &amp; Making Tax Digital
-            </h3>
+            <h3 class="service-title">Bookkeeping, VAT &amp; Making Tax Digital</h3>
             <p class="service-body">
-              We support day-to-day record keeping and quarterly VAT
-              submissions. Whether you need a fully managed bookkeeping service
-              or just help submitting your figures from your own software, we'll
-              adapt to your needs.
+              We can support you with day-to-day record keeping and quarterly
+              VAT submissions. Whether you need a fully managed bookkeeping
+              service or just help submitting your figures from your own
+              software, we'll adapt to your needs.
             </p>
           </div>
 
@@ -1095,27 +323,21 @@
       <div class="about-inner">
         <div class="about-body">
           <p class="section-label">About Us</p>
-          <h2 class="section-heading">
-            35 years of expertise,<br />at your service.
-          </h2>
+          <h2 class="section-heading">35 years of expertise,<br />at your service.</h2>
           <div class="ethos-rule" style="margin-top: 1rem"></div>
           <p>
             Our Director, Sharon Evans, brings over 35 years of experience in
             accounting and taxation. She is both a Chartered Accountant and a
             Chartered Tax Advisor, with a career spanning small, medium and
-            large accountancy practices across Scotland.
+            large accountancy practices across Scotland. Most recently, as an
+            associate at Barclay &amp; Co. CA in Linlithgow.
           </p>
           <p>
-            Most recently serving as an Associate at Barclay &amp; Co. CA in
-            Linlithgow, Sharon has built deep expertise across the full spectrum
-            of owner-managed business needs — from day-to-day compliance through
-            to complex tax planning.
-          </p>
-          <p>
-            As a regulated professional, Sharon maintains complete client
-            confidentiality and stays fully up to date with the latest
-            legislation and best practices — so you can feel confident you're
-            receiving expert, compliant advice.
+            As a qualified professional, Sharon is bound by strict regulatory
+            standards. This includes maintaining complete client confidentiality
+            and staying fully up to date with the latest legislation and best
+            practices — so you can feel confident you're receiving expert,
+            compliant advice.
           </p>
 
           <div class="qualifications">
@@ -1200,11 +422,10 @@
       <div class="contact-inner">
         <div class="contact-intro">
           <p class="section-label">Get in Touch</p>
-          <h2 class="section-heading">Let's have a conversation.</h2>
+          <h2 class="section-heading">No-obligation,<br />friendly chat.</h2>
           <p>
             Get in touch for a friendly, no-obligation chat about your
-            requirements. There's no fee for an initial discussion — we're happy
-            to talk through how we can help your business.
+            requirements — there's no fee for an initial discussion.
           </p>
 
           <div class="contact-detail">
@@ -1218,15 +439,11 @@
               stroke-linejoin="round"
               aria-hidden="true"
             >
-              <path
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-              />
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
             <div class="contact-detail-text">
-              <a href="mailto:info@evansaccounts.co.uk"
-                >info@evansaccounts.co.uk</a
-              >
+              <a href="mailto:info@evansaccounts.co.uk">info@evansaccounts.co.uk</a>
             </div>
           </div>
 
@@ -1277,18 +494,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="service">How can we help?</label>
-            <select id="service" name="service">
-              <option value="">Select a service…</option>
-              <option>Bookkeeping, VAT &amp; MTD</option>
-              <option>Accounts (Limited Company)</option>
-              <option>Accounts (Sole Trader)</option>
-              <option>Taxation</option>
-              <option>Payroll &amp; CIS</option>
-              <option>General enquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
             <label for="message">Message</label>
             <textarea
               id="message"
@@ -1306,12 +511,21 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-logo">Evans<span>.</span>Accounts</div>
+      <div class="footer-logo">
+        <img
+          class="footer-logo-img"
+          src="assets/branding-logo.png"
+          alt="Evans Tax and Accounts Limited logo"
+        />
+        <span class="co-name">Evans Tax and Accounts Limited</span>
+      </div>
       <div class="footer-meta">
-        &copy; 2026 Evans Accounts. All rights reserved.<br />
+        &copy; 2026 Evans Tax and Accounts Limited. All rights reserved.<br />
         Registered in Scotland &nbsp;|&nbsp;
         <a href="/privacy" style="color: inherit">Privacy Notice</a>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

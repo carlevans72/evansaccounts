@@ -1,0 +1,17 @@
+/* ──────────────────────────────────────────────────────────────
+   EVANS TAX AND ACCOUNTS LIMITED
+   Main Stylesheet
+   ────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@import 'variables.css';
+@import 'reset.css';
+@import 'typography.css';
+@import 'components/nav.css';
+@import 'components/hero.css';
+@import 'components/sections.css';
+@import 'components/forms.css';
+@import 'components/footer.css';
+@import 'animations.css';
+@import 'responsive.css';
