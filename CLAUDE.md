@@ -1,0 +1,49 @@
+# Evans Tax and Accounts — Claude Code Context
+
+## Project overview
+
+Static marketing website for Evans Tax and Accounts Limited, a Scottish chartered accounting and tax advisory firm. Single-page site with contact form.
+
+**Stack:** HTML5, CSS3, vanilla JavaScript (ES6). No build tool, no framework, no package manager.
+
+## Running locally
+
+```bash
+python3 -m http.server 8080
+```
+
+Dev server config is in `.claude/launch.json`. The site is fully static — no build step.
+
+## File structure
+
+```
+index.html              # Entire page — hero, ethos, services, about, contact, footer
+js/app.js               # Hamburger menu, form submission, scroll animations
+css/
+  styles.css            # Imports all other CSS files
+  variables.css         # Design tokens — colours, spacing, shadows
+  reset.css
+  typography.css
+  design-system.css
+  animations.css
+  responsive.css
+  components/           # nav, hero, sections, forms, footer
+assets/
+  branding-logo.png
+  icons/                # SVG icons for services, credentials, contact
+```
+
+## Key conventions
+
+- **CSS:** All design tokens live in `variables.css`. Colour palette is navy/gold extracted from the logo. Shadow depth system: `sm/md/lg`.
+- **JavaScript:** IIFE pattern with `'use strict'`. Uses Intersection Observer for scroll animations and the Fetch API for form submission (Web3Forms).
+- **Responsive:** Main breakpoint at 600px. Service cards go 4→2→1 columns (not CSS auto-fit). Mobile nav closes at 900px viewport width.
+- **Accessibility:** ARIA attributes throughout (`aria-expanded`, `aria-hidden`, `aria-live`), semantic HTML.
+
+## Contact form
+
+Uses [Web3Forms](https://web3forms.com). The `access_key` is set in `index.html` around line 313. Do not hardcode or commit a real key — confirm with the user before changing it.
+
+## Deployment
+
+No build step — deploy by uploading files directly. Compatible with GitHub Pages, Netlify, Vercel, or any static host.
