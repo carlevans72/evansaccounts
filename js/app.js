@@ -67,7 +67,7 @@
     if (window.innerWidth > 1100) closeMenu();
   });
 
-  /* ── Contact form — Web3Forms ── */
+  /* ── Contact form — staticforms.dev ── */
   const contactForm = document.querySelector('.contact-form');
 
   if (contactForm) {
