@@ -2,3 +2,10 @@
    DESIGN SYSTEM
    Logo-inspired geometric elements & visual accents
    ────────────────────────────────────────────────────────────── */
+
+/* ── Focus rings ── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

@@ -58,6 +58,10 @@ nav {
   color: var(--navy);
 }
 
+.nav-links a.active {
+  color: var(--gold);
+}
+
 .nav-cta {
   font-size: 12px;
   font-weight: 500;

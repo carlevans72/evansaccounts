@@ -85,7 +85,19 @@
 .animate-on-scroll.in-view {
   opacity: 1;
   transform: translateY(0);
+  transition-delay: 0s;
 }
+
+/* Staggered entrance for service cards and qual badges */
+.service-card:nth-child(1).animate-on-scroll { transition-delay: 0s; }
+.service-card:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
+.service-card:nth-child(3).animate-on-scroll { transition-delay: 0.2s; }
+.service-card:nth-child(4).animate-on-scroll { transition-delay: 0.3s; }
+
+.qual-badge:nth-child(1).animate-on-scroll { transition-delay: 0s; }
+.qual-badge:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
+.qual-badge:nth-child(3).animate-on-scroll { transition-delay: 0.2s; }
+.qual-badge:nth-child(4).animate-on-scroll { transition-delay: 0.3s; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

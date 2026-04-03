@@ -150,4 +150,23 @@
     el.classList.add('animate-on-scroll');
     observer.observe(el);
   });
+
+  /* ── Active nav highlighting ── */
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const sectionObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      const link = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navLinks.forEach(function (a) { a.classList.remove('active'); });
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+  ['services', 'ethos', 'about', 'contact'].forEach(function (id) {
+    const section = document.getElementById(id);
+    if (section) sectionObserver.observe(section);
+  });
 })();
