@@ -91,6 +91,17 @@
 .qual-badge:nth-child(3).animate-on-scroll { transition-delay: 0.2s; }
 .qual-badge:nth-child(4).animate-on-scroll { transition-delay: 0.3s; }
 
+.ethos-body p:nth-of-type(1).animate-on-scroll { transition-delay: 0s; }
+.ethos-body p:nth-of-type(2).animate-on-scroll { transition-delay: 0.1s; }
+.ethos-body p:nth-of-type(3).animate-on-scroll { transition-delay: 0.2s; }
+
+.about-body p:nth-of-type(2).animate-on-scroll { transition-delay: 0s; }
+.about-body p:nth-of-type(3).animate-on-scroll { transition-delay: 0.1s; }
+
+.about-stat:nth-child(1).animate-on-scroll { transition-delay: 0s; }
+.about-stat:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
+.about-stat:nth-child(3).animate-on-scroll { transition-delay: 0.2s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

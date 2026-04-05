@@ -131,7 +131,7 @@
   }, observerOptions);
 
   /* Observe section headings and cards */
-  document.querySelectorAll('.section-heading, .service-card, .qual-badge').forEach(function (el) {
+  document.querySelectorAll('.section-heading, .service-card, .qual-badge, .ethos-body p, .about-body p:not(.section-label), .about-stat').forEach(function (el) {
     el.classList.add('animate-on-scroll');
     observer.observe(el);
   });
