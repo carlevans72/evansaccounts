@@ -3,17 +3,7 @@
    ────────────────────────────────────────────────────────────── */
 
 @media (max-width: 1100px) {
-  /* Allow the logo to shrink so it doesn't push the hamburger/back-link off screen */
-  .nav-logo {
-    min-width: 0;
-    flex-shrink: 1;
-  }
-
-  .co-name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  .co-name { display: none; }
 
   .hero-inner {
     grid-template-columns: 1fr;
