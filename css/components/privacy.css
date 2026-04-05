@@ -1,0 +1,157 @@
+/* ──────────────────────────────────────────────────────────────
+   PRIVACY POLICY PAGE
+   ────────────────────────────────────────────────────────────── */
+
+/* ── Back link (sits in the nav in place of nav-links/cta) ── */
+
+.privacy-back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--steel-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.privacy-back-link:hover {
+  color: var(--navy);
+}
+
+.privacy-back-link svg {
+  transition: transform 0.2s;
+}
+
+.privacy-back-link:hover svg {
+  transform: translateX(-3px);
+}
+
+/* ── Main content ── */
+
+.privacy-main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 6rem 4vw 6rem;
+}
+
+.privacy-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.privacy-main h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-updated {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.privacy-main h2 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-main p {
+  color: var(--text-body);
+  margin-bottom: 1rem;
+}
+
+.privacy-main ul {
+  color: var(--text-body);
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-main ul li {
+  margin-bottom: 0.35rem;
+}
+
+/* ── Term labels (e.g. "Identity data") ── */
+
+.policy-term {
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.policy-section {
+  padding-top: 0.25rem;
+}
+
+/* ── Rights list ── */
+
+.rights-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rights-list li {
+  padding: 0.9rem 1rem;
+  border-left: 2px solid var(--border-gold);
+  margin-bottom: 0.75rem;
+  background: rgba(201, 168, 76, 0.04);
+}
+
+/* ── ICO block ── */
+
+.ico-block {
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  margin-top: 0.75rem;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.ico-block strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+/* ── Body content links (email, website, ICO) ── */
+
+.privacy-main a,
+.ico-block a {
+  color: var(--steel-blue);
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.privacy-main a::after,
+.ico-block a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.privacy-main a:hover,
+.ico-block a:hover {
+  color: var(--navy);
+}
+
+.privacy-main a:hover::after,
+.ico-block a:hover::after {
+  width: 100%;
+}
+

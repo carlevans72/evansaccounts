@@ -2,6 +2,8 @@
    RESPONSIVE DESIGN
    ────────────────────────────────────────────────────────────── */
 
+.co-name-short { display: none; }
+
 @media (max-width: 1100px) {
   .hero-inner {
     grid-template-columns: 1fr;
@@ -60,6 +62,9 @@
 }
 
 @media (max-width: 600px) {
+  .co-name-full { display: none; }
+  .co-name-short { display: inline; }
+
   .hero-credentials {
     grid-template-columns: 1fr;
   }
