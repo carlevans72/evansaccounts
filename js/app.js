@@ -6,21 +6,6 @@
 (function () {
   'use strict';
 
-  /* ── Company name Ltd/Limited swap ── */
-  const nameElements = document.querySelectorAll('.co-name');
-
-  function updateCompanyName() {
-    const isSmallScreen = window.matchMedia('(max-width: 600px)').matches;
-    nameElements.forEach((el) => {
-      el.textContent = isSmallScreen
-        ? 'Evans Tax and Accounts Ltd'
-        : 'Evans Tax and Accounts Limited';
-    });
-  }
-
-  updateCompanyName();
-  window.addEventListener('resize', updateCompanyName);
-
   /* ── Hamburger menu ── */
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.getElementById('mobile-nav');
@@ -117,7 +102,7 @@
         const data = await res.json();
 
         if (res.ok && data.success) {
-          showFeedback('Thank you — your message has been sent. We\'ll be in touch shortly.', false);
+          showFeedback('Thank you, your message has been sent. We\'ll be in touch shortly.', false);
           contactForm.reset();
         } else {
           showFeedback('Something went wrong. Please try emailing us directly at info@evansaccounts.co.uk.', true);

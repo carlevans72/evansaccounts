@@ -117,7 +117,6 @@
   background: var(--off-white);
   border-left-color: var(--gold);
   box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 .service-card:hover::before {
