@@ -25,6 +25,35 @@
   --border: rgba(74, 104, 153, 0.15);
   --border-gold: rgba(201, 168, 76, 0.25);
 
+  /* GOLD TINTS & GLOWS */
+  --gold-tint: rgba(201, 168, 76, 0.05);
+  --gold-hover-bg: rgba(201, 168, 76, 0.08);
+  --gold-focus-ring: rgba(201, 168, 76, 0.1);
+  --gold-glow: rgba(201, 168, 76, 0.15);
+  --gold-border-soft: rgba(201, 168, 76, 0.2);
+  --gold-border-active: rgba(201, 168, 76, 0.4);
+  --gold-shadow-sm: 0 4px 12px rgba(201, 168, 76, 0.3);
+  --gold-shadow-md: 0 8px 24px rgba(201, 168, 76, 0.4);
+
+  /* SURFACE OVERLAYS (dark bg contexts) */
+  --surface-card: rgba(255, 255, 255, 0.05);
+  --surface-input: rgba(255, 255, 255, 0.08);
+  --surface-input-focus: rgba(255, 255, 255, 0.12);
+  --surface-border: rgba(255, 255, 255, 0.15);
+  --shine: rgba(255, 255, 255, 0.25);
+  --steel-blue-tint: rgba(74, 104, 153, 0.12);
+  --navy-light-overlay: rgba(30, 58, 106, 0.5);
+
+  /* TEXT ON DARK */
+  --ghost-text: rgba(247, 249, 252, 0.6);
+  --placeholder: rgba(138, 154, 181, 0.6);
+
+  /* STATUS */
+  --success-bg: rgba(74, 153, 104, 0.15);
+  --success-border: rgba(74, 153, 104, 0.4);
+  --error-bg: rgba(201, 76, 76, 0.15);
+  --error-border: rgba(201, 76, 76, 0.4);
+
   /* SPACING */
   --section-padding: 6rem 4vw;
   --section-gap: 3.5rem;
@@ -35,4 +64,6 @@
   --shadow-sm: 0 2px 8px rgba(15, 31, 56, 0.08);
   --shadow-md: 0 8px 24px rgba(15, 31, 56, 0.12);
   --shadow-lg: 0 16px 48px rgba(15, 31, 56, 0.15);
+  --shadow-nav: 0 1px 12px rgba(15, 31, 56, 0.07);
+  --shadow-nav-open: 0 8px 24px rgba(15, 31, 56, 0.1);
 }
