@@ -3,7 +3,9 @@
    ────────────────────────────────────────────────────────────── */
 
 @media (max-width: 1100px) {
-  .co-name { display: none; }
+  .nav-logo-img { height: 48px; }
+
+  .mobile-nav { top: 80px; }
 
   .hero-inner {
     grid-template-columns: 1fr;
@@ -62,6 +64,8 @@
 }
 
 @media (max-width: 600px) {
+
+  .co-name { font-size: 16px; }
 
   .hero-credentials {
     grid-template-columns: 1fr;
