@@ -4,7 +4,7 @@
 
 footer {
   background: linear-gradient(135deg, var(--off-white) 0%, rgba(201, 168, 76, 0.03) 100%);
-  padding: 3rem 4vw;
+  padding: 1.75rem 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,11 +31,11 @@ footer::before {
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   font-weight: 600;
-  color: var(--steel-blue-light);
+  color: var(--navy);
 }
 
 .footer-logo-img {
-  height: 36px;
+  height: 60px;
   width: auto;
 }
 

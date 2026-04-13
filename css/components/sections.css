@@ -19,6 +19,14 @@
   color: var(--navy);
 }
 
+/* Offset anchor scroll to clear fixed nav */
+#services,
+#ethos,
+#about,
+#contact {
+  scroll-margin-top: 100px;
+}
+
 /* ETHOS */
 
 #ethos {
