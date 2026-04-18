@@ -3,7 +3,7 @@
    ────────────────────────────────────────────────────────────── */
 
 .section-label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -255,12 +255,12 @@
 }
 
 .contact-intro .section-label {
-  color: var(--steel-blue-light);
+  color: var(--gold-light);
 }
 
 .contact-intro p:not(.section-label) {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: var(--ghost-text);
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -282,7 +282,7 @@
 
 .contact-detail-text {
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--ghost-text);
 }
 
 .contact-detail-text a {

@@ -58,7 +58,7 @@
 }
 
 .hero-eyebrow {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -93,7 +93,7 @@
 
 .hero-body {
   font-size: 16px;
-  color: var(--text-muted);
+  color: var(--ghost-text);
   max-width: 44ch;
   margin-bottom: 2.5rem;
   line-height: 1.8;
@@ -106,7 +106,7 @@
 }
 
 .btn-primary {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -149,7 +149,7 @@
 }
 
 .btn-ghost {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -218,7 +218,7 @@
 }
 
 .credential-label {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold);
@@ -234,7 +234,7 @@
 }
 
 .credential-sub {
-  font-size: 13px;
-  color: var(--text-muted);
+  font-size: 14px;
+  color: var(--ghost-text);
   margin-top: 0.25rem;
 }

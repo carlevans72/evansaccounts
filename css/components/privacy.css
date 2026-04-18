@@ -35,7 +35,7 @@
 .privacy-main {
   max-width: 780px;
   margin: 0 auto;
-  padding: 6rem 4vw 6rem;
+  padding: calc(6rem + 104px) 4vw 6rem;
 }
 
 .privacy-eyebrow {
