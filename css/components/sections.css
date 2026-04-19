@@ -62,10 +62,6 @@
   margin-bottom: 2rem;
 }
 
-.ethos-rule--spaced {
-  margin-top: 1rem;
-}
-
 /* SERVICES */
 
 #services {
@@ -139,8 +135,8 @@
 
 .service-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 700;
   color: var(--navy);
   margin-bottom: 0.75rem;
   line-height: 1.3;

@@ -27,7 +27,7 @@
 }
 
 .privacy-back-link:hover svg {
-  transform: translateX(-3px);
+  transform: rotate(90deg);
 }
 
 /* ── Main content ── */

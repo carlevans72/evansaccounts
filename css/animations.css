@@ -80,11 +80,29 @@
   transition-delay: 0s;
 }
 
-/* Staggered entrance for service cards and qual badges */
+/* Staggered entrance for service cards — layout-aware */
+
+/* Desktop: 4-wide row, full left-to-right stagger */
 .service-card:nth-child(1).animate-on-scroll { transition-delay: 0s; }
 .service-card:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
 .service-card:nth-child(3).animate-on-scroll { transition-delay: 0.2s; }
 .service-card:nth-child(4).animate-on-scroll { transition-delay: 0.3s; }
+
+/* Tablet: 2×2 grid — stagger resets per row */
+@media (max-width: 1100px) and (min-width: 601px) {
+  .service-card:nth-child(1).animate-on-scroll { transition-delay: 0s; }
+  .service-card:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
+  .service-card:nth-child(3).animate-on-scroll { transition-delay: 0s; }
+  .service-card:nth-child(4).animate-on-scroll { transition-delay: 0.1s; }
+}
+
+/* Mobile: stacked single column — no stagger, each card reveals on scroll */
+@media (max-width: 600px) {
+  .service-card:nth-child(1).animate-on-scroll,
+  .service-card:nth-child(2).animate-on-scroll,
+  .service-card:nth-child(3).animate-on-scroll,
+  .service-card:nth-child(4).animate-on-scroll { transition-delay: 0s; }
+}
 
 .qual-badge:nth-child(1).animate-on-scroll { transition-delay: 0s; }
 .qual-badge:nth-child(2).animate-on-scroll { transition-delay: 0.1s; }
