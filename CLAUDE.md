@@ -36,13 +36,13 @@ assets/
 ## Key conventions
 
 - **CSS:** All design tokens live in `variables.css`. Colour palette is navy/gold extracted from the logo. Shadow depth system: `sm/md/lg`.
-- **JavaScript:** IIFE pattern with `'use strict'`. Uses Intersection Observer for scroll animations and the Fetch API for form submission (Web3Forms).
+- **JavaScript:** IIFE pattern with `'use strict'`. Uses Intersection Observer for scroll animations and the Fetch API for form submission (staticforms.dev).
 - **Responsive:** Main breakpoint at 600px. Service cards go 4→2→1 columns (not CSS auto-fit). Mobile nav closes at 1100px viewport width.
 - **Accessibility:** ARIA attributes throughout (`aria-expanded`, `aria-hidden`, `aria-live`), semantic HTML.
 
 ## Contact form
 
-Uses [Web3Forms](https://web3forms.com). The `access_key` is set in `index.html` around line 313. Do not hardcode or commit a real key — confirm with the user before changing it.
+Uses [staticforms.dev](https://staticforms.dev). The `apiKey` is set in `index.html` around line 322. Do not hardcode or commit a real key — confirm with the user before changing it.
 
 ## Git workflow
 
