@@ -40,7 +40,7 @@ footer::before {
 }
 
 .footer-meta {
-  font-size: 12px;
+  font-size: var(--text-2xs);
   color: var(--text-muted);
   text-align: right;
   line-height: 1.8;

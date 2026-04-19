@@ -12,13 +12,13 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .form-group {
@@ -28,7 +28,7 @@
 }
 
 .form-group label {
-  font-size: 12px;
+  font-size: var(--text-2xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ghost-text);
@@ -39,10 +39,10 @@
 .form-group select {
   background: var(--surface-input);
   border: 1px solid var(--surface-border);
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   color: var(--warm-white);
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  font-size: var(--text-md);
   padding: 0.85rem 1rem;
   outline: none;
   transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
@@ -74,17 +74,17 @@
 }
 
 .form-submit {
-  margin-top: 1.5rem;
-  font-size: 13px;
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--navy);
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
   border: none;
-  padding: 1rem 2.5rem;
+  padding: var(--space-4) var(--space-10);
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   align-self: flex-start;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   box-shadow: var(--gold-shadow-sm);
@@ -114,9 +114,9 @@
 }
 
 .form-note {
-  font-size: 13px;
+  font-size: var(--text-sm);
   color: rgba(247, 249, 252, 0.45);
-  margin-top: 0.25rem;
+  margin-top: var(--space-1);
 }
 
 .form-submit:disabled {
@@ -130,9 +130,9 @@
 }
 
 .form-success {
-  font-size: 14px;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
+  font-size: var(--text-md);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
   display: none;
 }
 

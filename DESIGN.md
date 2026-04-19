@@ -52,8 +52,10 @@ Defined in `css/variables.css`:
 
 | Token | Value | Typical use |
 |---|---|---|
-| `--text-xs` | 11px | Eyebrows, qual-badge labels |
-| `--text-sm` | 13px | Nav links, CTA buttons, form labels, captions |
+| `--text-xs` | 11px | Privacy eyebrow |
+| `--text-2xs` | 12px | Section labels, qual-badges, stat labels, footer meta, form labels |
+| `--text-sm` | 13px | Nav links, CTA buttons, form submit, privacy back link |
+| `--text-md` | 14px | Credential sub, contact detail text, form inputs, ICO block |
 | `--text-base` | 15px | Body copy, service card body |
 | `--text-lg` | 18px | Credential card titles |
 | `--text-xl` | 21px | Service card titles |
