@@ -16,6 +16,7 @@
     mobileNav.classList.add('open');
     mobileNav.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    mobileNav.querySelector('a').focus();
   }
 
   function closeMenu() {
@@ -24,6 +25,7 @@
     mobileNav.classList.remove('open');
     mobileNav.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    hamburger.focus();
   }
 
   hamburger.addEventListener('click', function (e) {
@@ -48,8 +50,12 @@
   });
 
   /* Close if viewport grows past breakpoint */
+  let resizeTimer;
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1100) closeMenu();
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      if (window.innerWidth > 1100) closeMenu();
+    }, 100);
   });
 
   /* ── Contact form — staticforms.dev ── */
@@ -104,6 +110,10 @@
         if (res.ok && data.success) {
           showFeedback('Thank you, your message has been sent. We\'ll be in touch shortly.', false);
           contactForm.reset();
+          setTimeout(function () {
+            feedbackEl.className = 'form-success';
+            feedbackEl.textContent = '';
+          }, 8000);
         } else {
           showFeedback('Something went wrong. Please try emailing us directly at info@evansaccounts.co.uk.', true);
         }
@@ -137,16 +147,15 @@
   });
 
   /* ── Active nav highlighting ── */
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
 
   const sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      const link = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
-      if (!link) return;
-      if (entry.isIntersecting) {
-        navLinks.forEach(function (a) { a.classList.remove('active'); });
-        link.classList.add('active');
-      }
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(function (a) { a.classList.remove('active'); });
+      document.querySelectorAll(`.nav-links a[href="#${entry.target.id}"], .mobile-nav a[href="#${entry.target.id}"]`).forEach(function (a) {
+        a.classList.add('active');
+      });
     });
   }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 

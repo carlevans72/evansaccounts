@@ -52,8 +52,10 @@
   /* STATUS */
   --success-bg: rgba(74, 153, 104, 0.15);
   --success-border: rgba(74, 153, 104, 0.4);
+  --success-text: #7bcca0;
   --error-bg: rgba(201, 76, 76, 0.15);
   --error-border: rgba(201, 76, 76, 0.4);
+  --error-text: #e8a0a0;
 
   /* TYPE SCALE */
   --text-xs: 11px;

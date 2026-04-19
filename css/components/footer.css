@@ -3,7 +3,7 @@
    ────────────────────────────────────────────────────────────── */
 
 footer {
-  background: linear-gradient(135deg, var(--off-white) 0%, rgba(201, 168, 76, 0.03) 100%);
+  background: linear-gradient(90deg, var(--off-white) 0%, rgba(201, 168, 76, 0.03) 100%);
   padding: 1.75rem 4vw;
   display: flex;
   align-items: center;
