@@ -115,38 +115,25 @@
   padding: 1rem 2.25rem;
   text-decoration: none;
   border-radius: var(--radius-md);
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, filter 0.25s ease;
   box-shadow: var(--gold-shadow-sm);
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-primary::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--shine);
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-  z-index: 1;
 }
 
 .btn-primary span {
   position: relative;
-  z-index: 2;
 }
 
-.btn-primary:hover {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  box-shadow: var(--gold-shadow-md);
-  transform: translateY(-3px);
+@media (hover: hover) {
+  .btn-primary:hover {
+    transform: scale(1.02);
+    box-shadow: var(--gold-shadow-md);
+    filter: brightness(1.12);
+  }
 }
 
-.btn-primary:hover::before {
-  transform: translateX(100%);
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: var(--gold-shadow-sm);
 }
 
 .btn-ghost {
@@ -163,11 +150,13 @@
   background: transparent;
 }
 
-.btn-ghost:hover {
-  border-color: var(--gold);
-  color: var(--gold);
-  background: var(--gold-hover-bg);
-  box-shadow: 0 4px 12px var(--gold-border-soft);
+@media (hover: hover) {
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: var(--gold-hover-bg);
+    box-shadow: 0 4px 12px var(--gold-border-soft);
+  }
 }
 
 .hero-credentials {
