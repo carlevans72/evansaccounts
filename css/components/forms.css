@@ -125,6 +125,7 @@
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-md);
   display: none;
+  margin-bottom: var(--space-3);
 }
 
 .form-success.is-success {
