@@ -9,3 +9,9 @@
   outline-offset: 3px;
   border-radius: 2px;
 }
+
+/* ── Text selection ── */
+::selection {
+  background: var(--gold-light);
+  color: var(--navy);
+}

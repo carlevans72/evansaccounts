@@ -58,7 +58,7 @@
     }, 100);
   });
 
-  /* ── Contact form — staticforms.dev ── */
+  /* ── Contact form - staticforms.dev ── */
   const contactForm = document.querySelector('.contact-form');
 
   if (contactForm) {
@@ -108,7 +108,7 @@
         const data = await res.json();
 
         if (res.ok && data.success) {
-          /* GA4 conversion — only fires if the visitor accepted analytics */
+          /* GA4 conversion - only fires if the visitor accepted analytics */
           if (typeof window.gtag === 'function') {
             window.gtag('event', 'generate_lead', { form_name: 'contact' });
           }
