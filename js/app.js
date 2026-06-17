@@ -108,6 +108,10 @@
         const data = await res.json();
 
         if (res.ok && data.success) {
+          /* GA4 conversion — only fires if the visitor accepted analytics */
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'generate_lead', { form_name: 'contact' });
+          }
           showFeedback('Thank you, your message has been sent. We\'ll be in touch shortly.', false);
           contactForm.reset();
           setTimeout(function () {
