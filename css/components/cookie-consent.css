@@ -90,4 +90,10 @@
   .cookie-consent-actions {
     justify-content: center;
   }
+
+  /* Banner is taller on mobile (stacked layout), so push footer content
+     above it so the Privacy Policy link remains tappable. */
+  body:has(#cookie-consent.is-visible) footer {
+    padding-bottom: 180px;
+  }
 }
